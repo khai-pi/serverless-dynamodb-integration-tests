@@ -5,7 +5,7 @@ import { awsSdkGetPromiseResponse } from "../../__mocks__/aws-sdk";
 describe("orders.db.service", () => {
   beforeAll(() => {
     jest.useFakeTimers("modern");
-    jest.setSystemTime(new Date(2022, 1, 28));
+    jest.setSystemTime(Date.UTC(2022, 1, 28));
   });
 
   beforeEach(() => {
